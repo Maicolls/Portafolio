@@ -1,0 +1,16 @@
+.scroll-btn {
+    position: fixed;
+    left: 50%;
+    bottom: 24px;
+    transform: translateX(-50%);
+    padding: 12px 16px;
+    border-radius: 9999px;
+    border: 2px soild blueviolet;
+    background: #c31414;
+    cursor: pointer;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, .12);
+}
+
+.scroll-btn:hover {
+    box-shadow: 0 10px 22px rgba(0, 0, 0, .18); 
+}

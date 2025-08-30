@@ -16,13 +16,15 @@ a {
 
 /*this section is navbar*/
 .navbar {
-    background-color: rgb(32, 79, 121);
+    background-color: rgb(201, 31, 102);
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 40px;
     min-height: 70px;
+    opacity: 0.8
+    ;
 }
 
 /*Logo*/
@@ -78,7 +80,7 @@ a {
     text-align: start;
     width: 100%;
     transition: 0.7s ease-in-out;
-    background-color: aliceblue;
+    background-color: rgb(17, 80, 135);
     padding: 10px;
 }
   

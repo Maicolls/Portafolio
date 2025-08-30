@@ -5,16 +5,16 @@ import Styles from "../Styles/Navbar.module.css";
 function Navbar() {
     
     //Adding th state to the menu 
-    const [isOpen, setIsOpen] = useState(false);
+    const [isActivate, setIsActive] = useState(false);
 
     //Add the activete class 
-    function toggleActiveClass() {
-        setIsOpen(!isOpen);
-    }
+    const toggleActiveClass = () => {
+        setIsActive(!isActivate);
+    };
 
     //Clean up function to remove the active class 
     const removeActive = () => {
-        setIsOpen(false);
+        setIsActive(false);
     }
 
     return (
@@ -22,29 +22,30 @@ function Navbar() {
             <header className="Navbar-header">
                 <nav className={ `${Styles.navbar}`}>
                     {/*Add logo*/}
-                    <a href="">
+                    <a href="home" className={`${Styles.logo}`}>
                         Dev.
                     </a>
-                    <ul className= {`${Styles.navMenu} ${isOpen ? 
-                        Styles.activate :''}`}>
+                    <ul className= {`${Styles.navMenu} ${isActivate ? 
+                        Styles.active : ''}`}>
                         <li onClick={removeActive}>
-                            <a href="" className={ `${Styles.navLink}`}>HOME</a>
+                            <a href="#About" className={ `${Styles.navLink}`}>About Me </a>
                         </li>
                         <li onClick={removeActive}>
-                            <a href="" className={ `${Styles.navLink}`}>About Me</a>
+                            <a href="Repositorios" className={ `${Styles.navLink}`}>Repositorios</a>
                             </li>
                         <li onClick={removeActive}>
-                            <a href="" className={ `${Styles.navLink}`}>Repositorios</a>
+                            <a href="#Estudios" className={ `${Styles.navLink}`}>Estudios</a>
                             </li>
                         <li onClick={removeActive}>
-                            <a href="" className={ `${Styles.navLink}`}>Contac ME</a>
+                            <a href="#Contact" className={ `${Styles.navLink}`}>Contacta Me</a>
                           </li>                      
                     </ul>
-                    <div className={`${Styles.hamburger} ${isOpen ? 
-                        Styles.activate: ''}`}  onClick={toggleActiveClass}></div>
+                    <div className={`${Styles.hamburger} ${isActivate ? 
+                        Styles.active : ''}`}  onClick={toggleActiveClass}>
                     <span className={`${Styles.bar}`}></span>
                     <span className={`${Styles.bar}`}></span>
-                    <span className={`${Styles.bar}`}></span> 
+                    <span className={`${Styles.bar}`}></span>
+                    </div>
                 </nav>
             </header>
         </div>
