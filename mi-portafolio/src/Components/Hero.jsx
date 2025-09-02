@@ -1,5 +1,7 @@
 import React from "react";
 import "../styles/Herostiles.css";
+import IconHero from "./IconsHero";
+import foto from "../assets/Img/Foto.png"
 
 function Hero(){
 
@@ -19,13 +21,13 @@ function Hero(){
                             Si quieres ponerte en contacto, solo da clic en el botón y ¡hablemos!
                         </p>
                     </div>
-                            <a href="#contact" className="Hero__button">
-                            Contáctame
-                        </a> 
+                    <div className="Hero__icons">
+                        <IconHero />
+                    </div>
                 </div>
                 <div className="ImgHero"> 
                     <img className="h-auto max-w-lg transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0" 
-                        src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/content-gallery-3.png" 
+                        src={foto} 
                         alt="image description" 
                     />
                 </div>

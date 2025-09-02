@@ -28,16 +28,16 @@ function Navbar() {
                     <ul className= {`${Styles.navMenu} ${isActivate ? 
                         Styles.active : ''}`}>
                         <li onClick={removeActive}>
-                            <a href="#About" className={ `${Styles.navLink}`}>About Me </a>
+                            <a href="#experiencia" className={ `${Styles.navLink}`}>Experiencia </a>
                         </li>
-                        <li onClick={removeActive}>
-                            <a href="Repositorios" className={ `${Styles.navLink}`}>Repositorios</a>
+                         <li onClick={removeActive}>
+                            <a href="#techicons" className={ `${Styles.navLink}`}>Habilidades</a>
                             </li>
                         <li onClick={removeActive}>
-                            <a href="#Estudios" className={ `${Styles.navLink}`}>Estudios</a>
+                            <a href="#projects" className={ `${Styles.navLink}`}>Repositorios</a>
                             </li>
                         <li onClick={removeActive}>
-                            <a href="#Contact" className={ `${Styles.navLink}`}>Contacta Me</a>
+                            <a href="./AboutMe.jsx" className={ `${Styles.navLink}`}>Conoceme</a>
                           </li>                      
                     </ul>
                     <div className={`${Styles.hamburger} ${isActivate ? 
