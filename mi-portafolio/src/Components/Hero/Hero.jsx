@@ -1,7 +1,6 @@
-import React from "react";
-import "../styles/Herostiles.css";
+import "../../styles/Herostiles.css";
 import IconHero from "./IconsHero";
-import Logo from "../assets/Img/Logo.jpeg"
+import Logo from "../../assets/Img/Logo.jpeg"
 
 function Hero(){
 

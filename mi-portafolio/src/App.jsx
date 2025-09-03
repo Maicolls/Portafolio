@@ -1,12 +1,12 @@
 import { useRef } from "react"
-import Navbar from "./Components/Navbar"
-import Hero from "./Components/Hero"
-import Experience from "./Components/Experiencia";
-import Projects from "./Components/Projects";
-import ScrollButton from "./Components/ScrollButton";
-import AboutMe from "./Components/AboutMe";
-import ContacMe from "./Components/ContacMe";
-import TechIcons from "./Components/TechIcons";
+import Navbar from "../src/Components/Navbar/Navbar"
+import Hero from "../src/Components/Hero/Hero"
+import Experience from "../src/Components/Experiencia/Experiencia";
+import Projects from "../src/Components/Projects/Projects";
+import ScrollButton from "../src/Components/ScrollButton/ScrollButton";
+import AboutMe from "../src/Components/AboutMe/AboutMe";
+import ContacMe from "../src/Components/ContacMe/ContacMe";
+import TechIcons from "../src/Components/TechIcons/TechIcons";
 import "./Styles/ScrollButton.css"
 
 
