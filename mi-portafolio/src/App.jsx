@@ -7,7 +7,7 @@ import ScrollButton from "../src/Components/ScrollButton/ScrollButton";
 import AboutMe from "../src/Components/AboutMe/AboutMe";
 import ContacMe from "../src/Components/ContacMe/ContacMe";
 import TechIcons from "../src/Components/TechIcons/TechIcons";
-import "./Styles/ScrollButton.css"
+import "../src/Components/ScrollButton/ScrollButton.css"
 
 
 function App() {
