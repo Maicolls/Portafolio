@@ -28,8 +28,8 @@ function App() {
         <section ref={experienceRef} id="experience"> <Experience /> </section>
         <section ref={techIconsRef} id="techicons"> <TechIcons /> </section>
         <section ref={projectsRef} id="projects"> <Projects /> </section>
-        <section ref={aboutMeRef} id="aboutme"> <AboutMe /> </section>
-        <section ref={contactarmeRef} id="contactme"> <ContacMe /> </section>
+        <section ref={aboutMeRef} id="conoceme"> <AboutMe /> </section>
+        <section ref={contactarmeRef} id="contact"> <ContacMe /> </section>
       </div>
       <ScrollButton sections={sections} offset={0} />
     </>

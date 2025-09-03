@@ -21,7 +21,8 @@ export default function ScrollNextButton({ sections, offset = 0, className = "" 
     <button 
       type="button"
       onClick={handleClick}
-      className={`animate-bounce scroll-btn ${className}`}
+      className={`animate-bounce scroll-btn ${className || 
+        "scroll-btn bg-primary text-light rounded-full px-4 py-2 shadow-lg hover:bg-accent transition duration-300"}`}
       aria-label="Ir a la siguiente sección"
       title="Siguiente sección"
     >

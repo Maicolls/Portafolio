@@ -37,8 +37,11 @@ function Navbar() {
                             <a href="#projects" className={ `${Styles.navLink}`}>Repositorios</a>
                             </li>
                         <li onClick={removeActive}>
-                            <a href="./AboutMe.jsx" className={ `${Styles.navLink}`}>Conoceme</a>
-                          </li>                      
+                            <a href="#conoceme" className={ `${Styles.navLink}`}>Sobre mi</a>
+                          </li>     
+                           <li onClick={removeActive}>
+                            <a href="#contact" className={ `${Styles.navLink}`}>Contacta me</a>
+                          </li>                  
                     </ul>
                     <div className={`${Styles.hamburger} ${isActivate ? 
                         Styles.active : ''}`}  onClick={toggleActiveClass}>
