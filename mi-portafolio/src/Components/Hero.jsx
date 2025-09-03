@@ -13,7 +13,7 @@ function Hero(){
                         <h1 className="Hero__title">
                             ¡Hola y Bienvenido/a! 
                         </h1>
-                        <p className="Hero__description">Desarrollador Web Full Stack apasionado por crear soluciones digitales modernas y efectivas. 🚀  
+                        <p className="Hero__description">Desarrollador Web Full Stack apasionado por crear soluciones digitales modernas y efectivas.  
                             Aquí podrás explorar mis proyectos, trabajos y parte de mi camino en el mundo del desarrollo.  
                         </p>
                     </div>
