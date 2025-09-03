@@ -12,7 +12,7 @@ export default function ScrollNextButton({ sections, offset = 0, className = "" 
         .find(({ top }) => top > 10)        // 10px de tolerancia
       || { el: els[0] };                    // si no hay, vuelve al inicio
 
-    // Scroll con offset (útil si tienes navbar fijo)
+    // Scroll con offset 
     const y = next.el.getBoundingClientRect().top + window.scrollY - offset;
     window.scrollTo({ top: y, behavior: "smooth" });
   }, [sections, offset]);

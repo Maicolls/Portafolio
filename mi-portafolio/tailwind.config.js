@@ -16,9 +16,11 @@ export default {
         accent: "#ff8906", // naranja vibrante
       },
       fontFamily: {
-        sans: ["'Orbitron'", "sans-serif"], // tipografía gamer
+        sans: ["'Nunito'", "sans-serif"],
+        body: ["'Roboto'", "sans-serif"],
       },
     },
   },
   plugins: [],
+
 };

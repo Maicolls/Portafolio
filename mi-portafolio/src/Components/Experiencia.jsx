@@ -24,7 +24,8 @@ export default function Experience() {
                     className="p-6 rounded-2xl shadow-lg bg-[#bb9f8c] hover:scale-105 transition"
                   >
                     <h3 className="text-xl font-semibold">{exp.title}</h3>
-                    <p className="text-black">{exp.company} • {exp.period}</p>
+                    <p className="text-black">{exp.company} 
+                      <br />• {exp.period}</p>
                     <p className="mt-2 text-black">{exp.description}</p>
                     
                   </div>

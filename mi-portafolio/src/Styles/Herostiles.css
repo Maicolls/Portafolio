@@ -21,36 +21,39 @@
 }
 
 .Hero__title{
-   font: italic 1.2rem "Fira Sans", serif;
+   font: sans-serif 1.2rem "Fira Sans", serif;
    font-size: 30px;
     font-weight: bold;
 }
 
 .Hero__subtitle{
-   font: italic 1.2rem "Fira Sans",serif;
+   font: sans-serif 1.2rem "Fira Sans",serif;
    font-size: 28px;
 }
 
 .Hero__name{
-    font: italic 1.2rem "Fira Sans", serif;
+    font: sans-serif 1.2rem "Fira Sans", serif;
     font-size: 20px;
 }
 
 .Hero__description{
-   font: italic 1.2rem "Fira Sans",serif;
+   font: sans-serif 1.2rem "Fira Sans",serif;
    font-size: 18px;
 }
 
 
 .ImgHero{
     flex: 1;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   padding: 20px;
-   margin: 0;
+  min-width: 300px;
+  max-width: 500px; 
 }
 
+.ImgHero img {
+  max-width: 350px; /* o el valor que prefieras */
+  width: 100%;
+  height: auto;
+  display: block;
+} 
 
 /*Responsivo*/
 @media (max-width: 768px) {
