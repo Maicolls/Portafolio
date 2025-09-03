@@ -1,4 +1,4 @@
-import "../../styles/Herostiles.css";
+import "./Herostiles.css";
 import IconHero from "./IconsHero";
 import Logo from "../../assets/Img/Logo.jpeg"
 
