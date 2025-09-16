@@ -5,7 +5,7 @@ export default function TechIcons() {
   return (
     <>
     <section className="pt-8" >
-    <h1 className="text-2xl font-bold mb-4 text-3xl font-bold mb-2 text-left pl-12" id="techicons"> Mi Stack Tecnologico</h1>
+    <h1 className="text-3xl font-bold mb-4 text-left" id="techicons"> Mi Stack Tecnologico</h1>
     <div className="flex flex-wrap gap-4 sm:gap-6 md:gap-8 lg:gap-11 text-3xl sm:text-4xl md:text-5xl lg:text-6xl justify-center"> 
       <FaHtml5 className="text-orange-500 hover:scale-110 transition-transform" /> 
       <FaCss3Alt className="text-blue-500 hover:scale-110 transition-transform" />

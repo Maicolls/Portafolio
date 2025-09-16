@@ -5,11 +5,11 @@ const ContacMe = () => {
     return (   
         <div className="container grid gap-8 px-6 py-12 mx-auto lg:grid-cols-3" id="contact">
             <div>
-                <p className="font-medium "> Contacta Me </p>
+                <p className="font-medium "> Contacta conmigo. </p>
 
                 <h1 className="mt-2 text-2xl font-semibold text-gray-800 md:text-3xl"> Recuerda Sin Junior no hay Senior </h1>
 
-                <p className="mt-3 "> Si gustas podemos agendar una entrevista con gusto</p>
+                <p className="mt-3 "> Si gustas, podemos agendar una entrevista con gusto</p>
             </div>
             <div className="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2">
             <div className="p-6 rounded-xl shadow-lg bg-gradient-to-br from-red-50 to-blue-100 dark:from-gray-800 dark:to-gray-700 hover:scale-105 transition-transform duration-300 flex flex-col items-center">

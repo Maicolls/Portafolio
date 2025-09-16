@@ -23,7 +23,7 @@ function Navbar() {
                 <nav className={ `${Styles.navbar}`}>
                     {/*Add logo*/}
                     <a href="home" className={`${Styles.logo}`}>
-                        Dev.
+                        Maycol.
                     </a>
                     <ul className= {`${Styles.navMenu} ${isActivate ? 
                         Styles.active : ''}`}>
@@ -37,10 +37,10 @@ function Navbar() {
                             <a href="#projects" className={ `${Styles.navLink}`}>Repositorios</a>
                             </li>
                         <li onClick={removeActive}>
-                            <a href="#conoceme" className={ `${Styles.navLink}`}>Sobre mi</a>
+                            <a href="#conoceme" className={ `${Styles.navLink}`}>Sobre mí</a>
                           </li>     
                            <li onClick={removeActive}>
-                            <a href="#contact" className={ `${Styles.navLink}`}>Contacta me</a>
+                            <a href="#contact" className={ `${Styles.navLink}`}>Contacta conmigo</a>
                           </li>                  
                     </ul>
                     <div className={`${Styles.hamburger} ${isActivate ? 

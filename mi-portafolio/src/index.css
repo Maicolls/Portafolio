@@ -7,9 +7,7 @@
 @tailwind utilities;
 
 body {
-  background: linear-gradient(#f6dfef);
-  
-  
+  @apply bg-gradient-to-br from-blue-50 via-cyan-200 to-blue-900 text-slate-900;  
 }
 html{
   scroll-behavior: smooth;

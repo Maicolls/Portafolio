@@ -5,7 +5,7 @@ import { projects } from "../../data/projects";
 const Projects = () => {
   return (
     <div className="pt-11" id="projects">
-      <h2 className='text-3xl font-bold mb-4 justify-center pl-12'>My Projects</h2>
+      <h2 className='text-3xl font-bold mb-4 text-left'>My Projects</h2>
       <div className='flex justify-center flex-wrap gap-10 p-6'>
         {projects.map((project, idx) => (
           <div key={idx} className="max-w-sm rounded overflow-hidden shadow-lg transition-all duration-800 cursor-pointer hover:shadow-xl hover:shadow-gray-400 hover:scale-105">

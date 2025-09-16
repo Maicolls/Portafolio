@@ -25,9 +25,9 @@ function App() {
       <Navbar />
       <div className="max-w-7xl mx-auto px-2" id="aboutme">
         <section ref={heroRef} id="hero"> <Hero /> </section>
-        <section ref={experienceRef} id="experience"> <Experience /> </section>
-        <section ref={techIconsRef} id="techicons"> <TechIcons /> </section>
+        <section ref={experienceRef} id="experience"> <Experience /> </section>  
         <section ref={projectsRef} id="projects"> <Projects /> </section>
+        <section ref={techIconsRef} id="techicons"> <TechIcons /> </section>
         <section ref={aboutMeRef} id="conoceme"> <AboutMe /> </section>
         <section ref={contactarmeRef} id="contact"> <ContacMe /> </section>
       </div>

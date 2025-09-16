@@ -1,7 +1,7 @@
 export const contact = [
     {
         title:"Mi correo profesional",
-        description:"No dudes en contatarme, estaré disponible",
+        description:"No dudes en contactarme, estaré disponible",
         email:"maycolgutierrez.dev@gmail.com"
     },
     {
