@@ -6,7 +6,7 @@ function SocialButtons() {
     <div className="flex flex-wrap items-center  sm:flex-row gap-4   ">
          {/* Resume */}
       <a
-        href="/CV.pdf"
+        href="../../../public/Maycol_Gutierrez_Software_Dev.pdf"
         download
         className="flex items-center gap-2 px-4 py-2  sm:w-auto rounded-md border border-gray-600 text-white hover:border-yellow-500 hover:text-yellow-500 transition whitespace-nowrap"
       >
@@ -15,7 +15,7 @@ function SocialButtons() {
       </a>
       {/* GitHub */}
       <a
-        href="https://github.com/TU_USUARIO"
+        href="https://github.com/Maicolls"
         target="_blank"
         rel="noopener noreferrer"
         className="flex items-center gap-2 px-4 py-2  sm:w-auto rounded-md border border-gray-600 text-white hover:border-orange-500 hover:text-orange-500 transition whitespace-nowrap"
@@ -26,7 +26,7 @@ function SocialButtons() {
 
       {/* LinkedIn */}
       <a
-        href="https://linkedin.com/in/TU_PERFIL"
+        href="https://www.linkedin.com/in/maicolgutierrez/"
         target="_blank"
         rel="noopener noreferrer"
         className="flex items-center gap-2 px-4 py-2  sm:w-auto rounded-md border border-gray-600 text-white hover:border-blue-500 hover:text-blue-500 transition whitespace-nowrap"

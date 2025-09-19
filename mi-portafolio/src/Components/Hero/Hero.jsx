@@ -12,7 +12,6 @@ function Hero(){
             <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">Soy <br/> Maycol Gutierrez</h1>
             <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-yellow-400">Transformando ideas en soluciones digitales innovadoras y proyectos reales.</p>
             <div className="flex items-center">
-
                 <IconsHero />
             </div>
         </div>
@@ -21,28 +20,7 @@ function Hero(){
         </div>                
     </div>
 </section>
-         {/*    <section className="Hero">
-                <div className="Hero__content">
-                    <div className="Hero__text">
-                        <h1 className="Hero__title">
-                            
-                        </h1>
-                        <p className="Hero__description"> 
-                           Software Developer 
-                           Transformando ideas en soluciones digitales innovadoras y proyectos reales.
-                        </p>
-                    </div>
-                    <div className="Hero__icons">
-                        <IconHero />
-                    </div>
-                </div>
-                <div className="ImgHero"> 
-                    <img className="h-auto max-w-lg transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0" 
-                        src={Logo} 
-                        alt="image description" 
-                    />
-                </div>
-            </section> */}
+        
         </>
     );
 }
