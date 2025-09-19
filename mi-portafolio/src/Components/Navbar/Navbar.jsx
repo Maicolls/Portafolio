@@ -1,10 +1,36 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Styles from "./Navbar.module.css";
+import logo from "../../assets/Img/Logo2.png";
+
+
 
 
 function Navbar() {
-    
-    //Adding th state to the menu 
+
+    useEffect(() => { 
+    const handleScroll = () => {
+        const offset = window.scrollY;
+        if (offset > 100){
+            setSticky(true);
+        } else {
+            setSticky(false);   
+        }
+    };
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+   }, []);
+
+   const [isSticky, setSticky] = useState(false);
+
+   // Determine the navbar classes based on the sticky state
+   const navbarClasses = isSticky ? `${Styles.navbar} ${Styles.sticky}` : Styles.navbar;
+
+
+    // El estado ahora viene de App
     const [isActivate, setIsActive] = useState(false);
 
     //Add the activete class 
@@ -18,12 +44,11 @@ function Navbar() {
     }
 
     return (
-        <div className="Navbar">
-            <header className="Navbar-header">
-                <nav className={ `${Styles.navbar}`}>
-                    {/*Add logo*/}
-                    <a href="home" className={`${Styles.logo}`}>
-                        Maycol.
+      
+       <nav className={navbarClasses}>
+            <div className={Styles.navbarContent}>
+                    <a href="home">
+                        <img src={logo} alt="logo" className={`${Styles.navbarLogo}`}/>
                     </a>
                     <ul className= {`${Styles.navMenu} ${isActivate ? 
                         Styles.active : ''}`}>
@@ -49,9 +74,9 @@ function Navbar() {
                     <span className={`${Styles.bar}`}></span>
                     <span className={`${Styles.bar}`}></span>
                     </div>
-                </nav>
-            </header>
-        </div>
+              
+            </div>
+  </nav>
     );
 };
 export default Navbar;

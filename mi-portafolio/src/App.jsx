@@ -3,11 +3,11 @@ import Navbar from "../src/Components/Navbar/Navbar"
 import Hero from "../src/Components/Hero/Hero"
 import Experience from "../src/Components/Experiencia/Experiencia";
 import Projects from "../src/Components/Projects/Projects";
-import ScrollButton from "../src/Components/ScrollButton/ScrollButton";
+import ScrollButton from "../src/Components/Buttons/ScrollButton";
 import AboutMe from "../src/Components/AboutMe/AboutMe";
 import ContacMe from "../src/Components/ContacMe/ContacMe";
 import TechIcons from "../src/Components/TechIcons/TechIcons";
-import "../src/Components/ScrollButton/ScrollButton.css"
+import "../src/Components/Buttons/ScrollButton.css"
 
 
 function App() {

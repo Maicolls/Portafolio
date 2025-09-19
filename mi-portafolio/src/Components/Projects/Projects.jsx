@@ -5,14 +5,14 @@ import { projects } from "../../data/projects";
 const Projects = () => {
   return (
     <div className="pt-11" id="projects">
-      <h2 className='text-3xl font-bold mb-4 text-left'>My Projects</h2>
+      <h2 className='text-3xl font-bold mb-4 text-left text-white'>My Projects</h2>
       <div className='flex justify-center flex-wrap gap-10 p-6'>
         {projects.map((project, idx) => (
-          <div key={idx} className="max-w-sm rounded overflow-hidden shadow-lg transition-all duration-800 cursor-pointer hover:shadow-xl hover:shadow-gray-400 hover:scale-105">
+          <div key={idx} className="max-w-sm rounded overflow-hidden shadow-lg transition-all duration-800 cursor-pointer hover:shadow-xl hover:shadow-yellow-400 hover:scale-110">
             <img className={project.imageClass} src={project.image} alt={project.title} />
             <div className="px-6 py-4">
-              <div className="font-bold text-xl mb-2">{project.title}</div>
-              <p className="text-gray-700 text-base">{project.description}</p>
+              <div className="font-bold text-xl mb-2 text-white">{project.title}</div>
+              <p className="text-gray-700 text-base text-white">{project.description}</p>
             </div>
             {project.github && (
               <div className="flex justify-center pb-8">

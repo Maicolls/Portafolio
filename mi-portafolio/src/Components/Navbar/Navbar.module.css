@@ -1,65 +1,71 @@
-* {
-    padding: 0;
-    margin:  0;
-    box-sizing: border-box;
-}
-
 ul {
     list-style: none;
 }
 
 a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 18px;
 }
-
 .navbar a {
-  color: #000000; /* negro, se nota bien con #bb9f8c */
+  color: #ffffff; /* negro, se nota bien con #bb9f8c */
   font-weight: 500;
 }
-
 .navbar a:hover {
-  color: #ffffff; /* al pasar el mouse que se ponga blanco */
+  color: #f9d907; /* al pasar el mouse que se ponga blanco */
 }
-
-
+.navbarLogo{
+    width: 80px;
+    height: auto;
+   display: block;
+}
 /*this section is navbar*/
 .navbar {
-  background-color: #bb9f8c; /* verde */
-  padding: 10px 20px;
+  background: rgba(24, 25, 38, 0.85);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.12);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 5px 5px;
   display: flex;
-  justify-content: space-between;
+  width: 100%;
+  z-index: 1000;
+  justify-content: space-around;
   align-items: center;
   gap: 40px;
   min-height: 70px;
-  opacity: 0.78;
 }
-
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
 .navLink {
   display: inline-block;
   transition: transform 0.2s ease, color 0.2s ease;
- 
 }
-
 .navLink:hover {
   transform: scale(1.1);
   color: #000000; /* azul eléctrico */
 }
 
 
-/*Logo*/
-.logo{
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
+.navbarContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  position: relative;
 }
 
 /*ul*/
 .navMenu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  gap: 60px;
 }
 
 /*for this part is a media queries*/
@@ -93,16 +99,22 @@ a {
 /* navMenu */
   
 .navMenu{
-    position: absolute;
-    flex-direction: column;
-    gap: 0;
-    top: 70px;
-    left: -100%;
-    text-align: start;
-    width: 100%;
-    transition: 0.7s ease-in-out;
-    background-color: #bb9f8c;
-    padding: 10px;
+  position: fixed ;
+  flex-direction: column;
+  gap: 0;
+  top: 80px;
+  left: -110vw;
+  text-align: start;
+  width: 100vw;
+  transition: 0.8s ease-in-out;
+   background: rgba(24, 25, 38, 0.85);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.12);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 11px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
   
 .navMenu.active{
@@ -112,4 +124,5 @@ a {
 .navMenu li {
     margin: 16px 0;
 }
+
 }
