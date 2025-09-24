@@ -8,6 +8,16 @@ export default {
   ],
     theme: {
       extend: {
+        animation: {
+           shine: "shine var(--duration) ease-in-out infinite",
+          },
+            keyframes: {
+        shine: {
+          "0%": { "background-position": "0% 0%" },
+          "50%": { "background-position": "100% 100%" },
+          "100%": { "background-position": "0% 0%" },
+        },
+      },
         colors: {
           primary: "#7f5af0",  // violeta eléctrico
           secondary: "#2cb67d", // verde neón
