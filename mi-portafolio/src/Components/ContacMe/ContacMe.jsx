@@ -11,14 +11,30 @@ const ContacMe = () => {
 
                 <p className="mt-3 text-white"> Si gustas, podemos agendar una entrevista con gusto</p>
             </div>
-            <div className="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2">
-            <div className="p-6 rounded-xl shadow-lg bg-gradient-to-br from-red-50 to-blue-100 dark:from-gray-800 dark:to-gray-700 hover:scale-105 transition-transform duration-300 flex flex-col items-center">
+            <div className="grid  gap-8 lg:col-span-2 sm:grid-cols-2">
+          <div className="relative p-6 rounded-xl shadow-lg 
+                bg-transparent backdrop-blur-md 
+                border border-transparent
+                before:absolute before:inset-0 before:rounded-xl 
+                before:p-[2px] before:bg-gradient-to-r before:from-yellow-400 via-yellow-500 to-yellow-300 
+                before:animate-[pulse_2s_infinite] 
+                before:-z-10
+                flex flex-col items-center">
                 <span className="mb-4 text-4xl text-red-500">{techIcons.gmail}</span>
-                <h2 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">{contact[0].title}</h2>
-                <p className="text-sm text-gray-500 dark:text-gray-400 mb-4 text-center">{contact[0].description}</p>
+                <span className="mb-4 text-4xl text-yellow-400">{techIcons.js}</span>
+                <h2 className="text-lg font-semibold text-white mb-2">{contact[0].title}</h2>
+                <p className="text-sm text-gray-300 mb-4 text-center">{contact[0].description}</p>
                 <span className="px-4 py-2 bg-red-500 text-white rounded-full shadow hover:bg-red-600 transition-colors">{contact[0].email}</span>
-            </div>
-            <div className="p-6 rounded-xl shadow-lg bg-gradient-to-br from-green-50 to-blue-100 dark:from-gray-800 dark:to-gray-700 hover:scale-105 transition-transform duration-300 flex flex-col items-center">
+                </div>
+
+            <div className="relative p-6 rounded-xl shadow-lg 
+                bg-transparent backdrop-blur-md 
+                border border-transparent
+                before:absolute before:inset-0 before:rounded-xl 
+                before:p-[2px] before:bg-gradient-to-r before:from-yellow-400 via-yellow-500 to-yellow-300 
+                before:animate-[pulse_2s_infinite] 
+                before:-z-10
+                flex flex-col items-center">
                 <span className="mb-4 text-4xl text-green-500">{techIcons.whatsapp}</span>
                 <h2 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">{contact[1].title}</h2>
                 <p className="text-sm text-gray-500 dark:text-gray-400 mb-4 text-center">{contact[1].description}</p>
@@ -31,7 +47,14 @@ const ContacMe = () => {
                 {contact[1].phoneLabel}
                 </a>
             </div>
-            <div className="p-6 rounded-xl shadow-lg bg-gradient-to-br from-blue-50 to-blue-200 dark:from-gray-800 dark:to-gray-700 hover:scale-105 transition-transform duration-300 flex flex-col items-center">
+           <div className="relative p-6 rounded-xl shadow-lg 
+                bg-transparent backdrop-blur-md 
+                border border-transparent
+                before:absolute before:inset-0 before:rounded-xl 
+                before:p-[2px] before:bg-gradient-to-r before:from-yellow-400 via-yellow-500 to-yellow-300 
+                before:animate-[pulse_2s_infinite] 
+                before:-z-11
+                flex flex-col items-center">
                 <span className="mb-4 text-4xl text-blue-700">{techIcons.linkedin}</span>
                 <h2 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">{contact[2].title}</h2>
                 <p className="text-sm text-gray-500 dark:text-gray-400 mb-4 text-center">{contact[2].description}</p>
