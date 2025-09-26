@@ -47,13 +47,13 @@ function Navbar() {
       
        <nav className={navbarClasses}>
             <div className={Styles.navbarContent}>
-                    <a href="home">
+                    <a href="../Navbar/Navbar.jsx">
                         <img src={logo} alt="logo" className={`${Styles.navbarLogo}`}/>
                     </a>
                     <ul className= {`${Styles.navMenu} ${isActivate ? 
                         Styles.active : ''}`}>
                         <li onClick={removeActive}>
-                            <a href="#experiencia" className={ `${Styles.navLink}`}>Experiencia </a>
+                            <a href="#experience" className={ `${Styles.navLink}`}>Experiencia </a>
                         </li>
                          <li onClick={removeActive}>
                             <a href="#techicons" className={ `${Styles.navLink}`}>Habilidades</a>

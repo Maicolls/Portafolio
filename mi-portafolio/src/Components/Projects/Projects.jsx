@@ -1,27 +1,34 @@
-import { techIcons } from "../Iconos/Iconos";
 import { projects } from "../../data/projects";
-
 
 const Projects = () => {
   return (
-    <div className="pt-11" id="projects">
-      <h2 className='text-3xl font-bold mb-4 text-left text-white'>My Projects</h2>
-      <div className='flex justify-center flex-wrap gap-10 p-6'>
+    <>
+    <div className="max-w-4xl mx-auto px-1 py-5" id="projects">
+     <h2 className='text-3xl font-bold  mb-12 font-bold text-yellow-400'>My Projects</h2>
+      <div className='flex justify-center flex-wrap gap-16 p-6'>
         {projects.map((project, idx) => (
-          <div key={idx} className="max-w-sm rounded overflow-hidden shadow-lg transition-all duration-800 cursor-pointer hover:shadow-xl hover:shadow-yellow-400 hover:scale-110">
+          <div key={idx} className="max-w-sm rounded-xl overflow-hidden transition-all duration-900 cursor-pointer hover:shadow-xl hover:shadow-yellow-500/50 
+            bg-gray-900/40 backdrop-blur-lg border border-gray-700/30 shadow-2xl">
+            
             <img className={project.imageClass} src={project.image} alt={project.title} />
-            <div className="px-6 py-4">
-              <div className="font-bold text-xl mb-2 text-white">{project.title}</div>
-              <p className="text-gray-700 text-base text-white">{project.description}</p>
+            
+            <div className="px-6 py-4 bg-gray-900/30 backdrop-blur-sm border-t border-gray-700/20">
+              <div className="font-bold text-xl mb-4 text-yellow-400">{project.title}</div>
+              <p className="text-gray-200 text-base leading-relaxed">{project.description}</p>
             </div>
+            
             {project.github && (
-              <div className="flex justify-center pb-8">
+              <div className="flex justify-center pb-6 pt-2 bg-gray-900/20 backdrop-blur-sm border-t border-gray-700/10">
                 <button
                    onClick={() => window.open(project.githubUrl, "_blank")}
-                  className="group flex justify-center p-2 rounded-md drop-shadow-xl bg-gradient-to-r from-gray-800 to-black text-white font-semibold hover:translate-y-3 transition-all duration-500 hover:from-[#331029] hover:to-[#310413]"
+                  className="group flex items-center justify-center px-4 py-2 rounded-lg 
+                    bg-gray-800/60 backdrop-blur-md border border-gray-600/40
+                    text-white font-medium hover:bg-gray-700/70 
+                    transition-all duration-300 hover:scale-105 shadow-lg
+                    hover:shadow-yellow-400/20"
                 >
                   <svg
-                    className="w-5"
+                    className="w-4 h-4 mr-2"
                     viewBox="0 0 15 15"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -31,25 +38,18 @@ const Projects = () => {
                       fill="currentColor"
                       fillRule="evenodd"
                       clipRule="evenodd"
-                    ></path>
+                    />
                   </svg>
-                  <span
-                    className="absolute opacity-0 group-hover:opacity-100 group-hover:text-gray-700 group-hover:text-sm group-hover:-translate-y-10 duration-700"
-                  >
-                    GitHub
-                  </span>
+                  <span>Ver Código</span>
                 </button>
               </div>
             )}
-            <div className="flex justify-center space-x-3 mt-1 text-4xl pb-4">
-              {project.technologies.map((icon) => (
-                <span key={icon}>{techIcons[icon]}</span>
-              ))}
-            </div>
+            
           </div>
         ))}
       </div>
     </div>
+    </>
   );
 }
 
