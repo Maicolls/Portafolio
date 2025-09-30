@@ -1,4 +1,4 @@
-import { FaHtml5, FaCss3Alt, FaReact, FaJsSquare, FaPhp, FaPython, FaGitAlt, FaGithub, FaNodeJs, FaFigma,  FaDatabase,FaJava } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaReact, FaJsSquare, FaPhp, FaPython, FaGitAlt, FaGithub, FaNodeJs, FaFigma,  FaDatabase,FaJava, FaDocker } from "react-icons/fa";
 import { SiMysql, SiTypescript, SiSpring } from "react-icons/si";
 
 export default function TechIcons() {
@@ -22,6 +22,7 @@ export default function TechIcons() {
       <FaFigma className="text-purple-600 hover:scale-110 transition-transform" />
       <FaJava className="text-red-500 hover:scale-110 transition-transform" />
       <SiSpring className="text-green-600 hover:scale-110 transition-transform" />
+      <FaDocker className="text-cyan-500 hover:scale-110 transition-transform" />
     </div>
     </section>
   </>
