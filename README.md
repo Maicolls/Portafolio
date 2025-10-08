@@ -59,10 +59,5 @@
 │   ├──  App.jsx          # Componente principal
 │   ├──  main.jsx         # Punto de entrada
 │   └──  index.css        # Estilos base y Tailwind
-├──  package.json         # Dependencias del proyecto
-├──  package-lock.json    # Lock de dependencias
-├──  vite.config.js       # Configuración de Vite
-├──  tailwind.config.js   # Configuración de Tailwind
-├──  postcss.config.js    # Configuración PostCSS
-├── 📄 eslint.config.js     # Configuración ESLint
+
   ```
