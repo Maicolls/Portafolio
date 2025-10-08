@@ -14,3 +14,22 @@
 - 🎨 React Icons
 - 🎨 MagicUI (componentes visuales)
 - 🛠️ Vite
+
+## 📂 Estructura del Proyecto
+```
+src/
+  Components/
+    Navbar/
+    Hero/
+    Projects/
+    ContacMe/
+    TechIcons/
+  lib/
+    magicui/
+    utils.js
+  data/
+    projects.js
+    contact.js
+  index.css
+  App.jsx
+  ```
