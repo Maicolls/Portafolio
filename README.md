@@ -59,5 +59,8 @@
 │   ├──  App.jsx          # Componente principal
 │   ├──  main.jsx         # Punto de entrada
 │   └──  index.css        # Estilos base y Tailwind
-
   ```
+
+##  📬 Contacto
+- Email: maycolgutierrez.dev@gmail.com
+- LinkedIn: https://www.linkedin.com/in/maicolgutierrez/
