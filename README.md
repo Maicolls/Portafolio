@@ -8,9 +8,9 @@
 
 ### 🛠️ Stack Tecnológico
 
-React
-TailwindCSS
-Framer Motion / Motion
-React Icons
-MagicUI (componentes visuales)
-Vite
+- ⚡React
+- 🎨 TailwindCSS
+- Framer Motion / Motion
+- 🎨 React Icons
+- 🎨 MagicUI (componentes visuales)
+- 🛠️ Vite
